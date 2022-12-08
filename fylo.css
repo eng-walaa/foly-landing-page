@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&family=Big+Shoulders+Display:wght@700&family=Cairo:wght@700&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Inter:wght@400;700&family=Jomhuria&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital@0;1&family=Outfit:wght@300;400;600&family=Poppins:ital,wght@0,600;1,600&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:ital,wght@0,500;0,900;1,400;1,500;1,900&family=Work+Sans:wght@200;300;500;600;700;800&display=swap');
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    min-height: 100vh;
+    
+    font-family: 'open-sans', sans-serif;
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+}
+.container .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-family: "raleway" , sans-serif;
+}
+.container .nav nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.container .nav nav p{
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.container aside{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+.container aside .sec-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 190px;
+    padding: 20px 20px;
+}
+
+.container .sec-1 .info h2{
+    margin-bottom: 20px;
+    font-weight: 700;
+    width: 500px;
+    font-size: 33px;
+}
+.container .sec-1 .info p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    
+}
+.container aside .img-1 img{
+    width: 500px;
+}
+.container .sec-1 .info input{
+    border: 1px solid var(--Light-Gray);
+    padding: 5px 10px;
+    border: 1px solid black;
+    position: relative;
+}
+.container .sec-1 .info input:focus{
+    outline: none;
+}
+
+.container .sec-1 .info button{
+    padding: 8px 20px;
+    background-color: var(--Bright-Blue);
+    border: none;
+    color: white;
+    font-size: 10px;
+}
+.container .with-avater{
+    background: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 6vh left -341vw;
+    padding: 20px 20px;
+}
+.container .sec-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 380px;
+    padding-top: 100px;
+   
+}
+.container .sec-2 .img-2 img{
+    width: 400px;
+   
+}
+.container .sec-2 .info h2{
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 33px;
+    font-family: "raleway" , sans-serif;
+}
+.container .sec-2 .info .p-4{
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 700;
+   
+    
+}
+.container .sec-2 .info .p-5{
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 700;
+   
+}
+.container .sec-2 .info .underline{
+    color: var(--Moderate-Cyan);
+    position: relative;
+}
+.container .sec-2 .info .underline::before{
+content: "";
+position: absolute;
+top: 22px;
+left: 0;
+width: 165px;
+border: 1px solid;
+}
+.container .sec-2 .info .underline:hover{
+    color: var(--Bright-Blue);
+}
+.container  aside .footer-1{
+    width: 260px;
+    height: 203px;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 18px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+.container aside .footer-1 img{
+    margin-bottom: 10px;
+}
+.container aside .footer-1 p{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.2rem;
+}
+.container aside .footer-1 .inf{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+.container aside .footer-1 .inf img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    
+}
+.container aside .footer-1 .inf .header h2{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "raleway" , sans-serif;
+}
+.container aside .footer-1 .inf .header h3{
+    font-size: 12px;
+}
+.container .title{
+    padding: 70px 10px;
+    background-color:var(--Desaturated-Blue);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container .title .h h2{
+    margin-bottom: 10px;
+}
+.container .title .h p{
+font-size: 12px;
+letter-spacing: 1px;
+width: 410px;
+line-height: 1.2rem;
+}
+.container .title .i{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.container .title .i input{
+    padding: 10px 30px;
+    border: 1px solid red;
+}
+.container .title .i input:focus{
+    outline: none;
+}
+.container .title .i button{
+    padding: 10px 20px;
+    background-color: var(--Bright-Blue);
+    border: none;
+    color: white;
+    font-size: 10px;
+}
+.container .footer-2{
+    background-color: var(--Very-Dark-Blue);
+    padding: 70px 10px;
+}
+.container .footer-2 .logo2 img{
+    filter:invert(100%);
+    margin-bottom: 20px;
+}
+.container .serv {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.container .serv .left .telephone,
+.container .serv .left .e-mail{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.container .footer-2 .serv .left img{
+width: 10px;
+height: 10px;
+}
+.container .footer-2 .serv .left p{
+    font-size: 12px;
+}
+.container .footer-2 .serv .services p,
+.container .footer-2 .serv .services-2 p{
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.container .footer-2 .serv .services p:hover{
+    color: var(--Bright-Blue);
+}
+.container .footer-2 .serv .social a{
+    padding-left: 15px;
+    margin-right: 10px;
+    color: white;
+    position: relative;
+}
+.container .footer-2 .serv .social a:hover{
+color: var(--Bright-Blue);
+}
+.container .footer-2 .serv .social a::after{
+content: "";
+position: absolute;
+top: -7px;
+left: 5px;
+ border-radius: 50%;
+ border: 1px solid white;
+ width: 100%;
+ height: 25px;
+}
+@media(max-width:375px){
+    body{
+        max-width: 375px;
+       /** padding: 10px 10px;**/
+    }
+    .container{
+        padding: 0;
+        
+    }
+    .container .nav{
+    margin-left:24px;
+    margin-right:25px;
+    }
+    .container .nav img{
+        height: 20px;
+    }
+    .container .nav nav p{
+        font-size: 10px;
+        padding: 0;
+    }
+    .container aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+    .container aside .info{
+        margin-left: 55px;
+    }
+    .container aside .sec-1{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 100px;
+        align-items: center;
+    }
+    .container aside .img-1 img{
+        width: 250px;
+    }
+    .container aside .sec-1 .info h2{
+        font-size: 20px;
+        text-align: center;
+        width: 292px;
+    }
+    .container aside .sec-1 .info p{
+        font-weight: 400;
+        text-align: center;
+        margin-right: 55px;
+        width: 290px;
+        margin-bottom: 30px;
+    }
+    .container .sec-1 .info input{
+        border-right: 1px solid var(--Light-Gray);
+        border-bottom: 1px solid var(--Light-Gray);
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+        border-radius: 5px;
+        width: 84%;
+    }
+
+    .container aside .sec-1 .info button{
+        display: block;
+        width: 84%;
+        margin-top: 12px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .container .with-avater{
+        background: url(images/bg-curve-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left -1008vw top 0vh;
+        
+       
+    }
+    .container .with-avater .img-2 img{
+        width: 250px;
+        margin-right: 13px;
+        margin-bottom: 100px;
+
+    }
+    .container .sec-2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+    .container .sec-2 .info h2{
+        font-size: 15px;
+        text-align: center;
+        margin-right: 43px;
+        font-weight: 700;
+    }
+    .container .sec-2 .info .p-4{
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--Light-Gray);
+        line-height: 1.2rem;
+        margin-right: 83px;
+    }
+    .container .sec-2 .info .p-5{
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--Light-Gray);
+        line-height: 1.2rem;
+        margin-right: 87px;
+    }
+    .container .sec-2 .info .underline{
+        font-size: 12px;
+    text-align: center;
+    margin-right: 60px;
+    margin-bottom: 2rem;
+    position: relative;
+    }
+    .container .sec-2 .info .underline::before{
+        content: "";
+        position: absolute;
+        top: 19px;
+        left: 32px;
+    }
+    .container aside .footer-1{
+        width: 221px;
+        height: 192px;
+        background-color: white;
+        border-radius: 15px;
+        margin-left: 60px;
+        padding: 10px;
+    }
+    .container .title{
+        text-align: center;
+    font-size: 12px;
+    flex-direction: column;
+    
+    }
+    .container .title .i input,
+    .container .title .i button{
+        width: 70%;
+        margin-left: 15%;
+        border: none;
+        font-size: 10px;
+    }
+    .container .title .h p{
+        width: 275px;
+        margin-top: 25px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+    .container .footer-2{
+        padding-left: 25px;
+    }
+    .container .serv{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container .footer-2 .serv .social{
+        margin-left: 25%;
+    }
+    
+}
+
+
+
+
+
+
+
